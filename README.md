@@ -1,4 +1,4 @@
-# **## Overview of GDAL (via Command Line & QGIS)**
+# **Overview of GDAL via a GUI**
 
 This is a static companion to a VCGI webinar scheduled for December 16, 2014 titled "Afraid of GDAL, There's a GUI For That: Raster Mastering in QGIS."
 
@@ -11,17 +11,17 @@ This is a static companion to a VCGI webinar scheduled for December 16, 2014 tit
 
 # **TOP TEN GDAL TOOLS (no particular oder)**
   
-## **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
+### **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
 Useful for identifying projection within command line but less useful within a GUI-based GIS because you can typically view layer properties to find the same information. However in earlier versions of QGIS this was a useful tool when working with unfamiliar data sources.
-## **2. Warp Raster** ([gdalwarp](http://gdal.org/1.11/gdalwarp.html))
+### **2. Warp Raster** ([gdalwarp](http://gdal.org/1.11/gdalwarp.html))
 Similar to the Project Raster tool in the ArcGIS suite, this tool allows users to assign raster layers different spatial reference system (SRS).
-## **3. Assign Projection** (-a_srs)
+### **3. Assign Projection** (-a_srs)
 Similar to the Define Projection tool in the ArcGIS suite, this option allows gdalwarp and gdal_translate to assign or change the layer SRS. 
-## **4. Translate** ([gdal_translate](http://gdal.org/1.11/gdal_translate.html))
+### **4. Translate** ([gdal_translate](http://gdal.org/1.11/gdal_translate.html))
 This is the Leatherman (I mean not all Swiss Army knives are actually multitools right?) of the GDAL library. This tool allows us to change the raster output format (i.e. - JPG, GeoTiff, etc), create a subset of the layer (i.e. - crop <-- seriously, crop not clip...), change the output size (outsize), extract and mask individual bands (-b band, mask band), and variety of other options described in the documentation.
-## **5. DEM Tools** ([gdal_dem](http://www.gdal.org/gdaldem.html))
-## **6. Polygonize** ([gdal_polygonize.py](http://www.gdal.org/gdal_polygonize.html))
-## **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
-## **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
-## **9. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
-## **10. Build Pyramids** ([gdaladdo](http://www.gdal.org/gdaladdo.html))
+### **5. DEM Tools** ([gdal_dem](http://www.gdal.org/gdaldem.html))
+### **6. Polygonize** ([gdal_polygonize.py](http://www.gdal.org/gdal_polygonize.html))
+### **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
+### **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
+### **9. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
+### **10. Build Pyramids** ([gdaladdo](http://www.gdal.org/gdaladdo.html))
