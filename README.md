@@ -1,4 +1,4 @@
-## Overview of GDAL (via Command Line & QGIS)
+# **## Overview of GDAL (via Command Line & QGIS)**
 
 This is a static companion to a VCGI webinar scheduled for December 16, 2014 titled "Afraid of GDAL, There's a GUI For That: Raster Mastering in QGIS."
 
@@ -9,7 +9,7 @@ This is a static companion to a VCGI webinar scheduled for December 16, 2014 tit
 3. And lastly visit [LibreMap](http://libremap.org/data/state/vermont/) and search for Mansfield to get a DRG. This is a wonderful source for DRGs throughout the U.S.
 4. 
 
-# **TOP TEN GDAL TOOLS COUNTDOWN (in no particular order...)**
+# **TOP TEN GDAL TOOLS (no particular oder)**
   
 ## **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
 Useful for identifying projection within command line but less useful within a GUI-based GIS because you can typically view layer properties to find the same information. However in earlier versions of QGIS this was a useful tool when working with unfamiliar data sources.
