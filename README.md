@@ -1,4 +1,4 @@
-# **Overview of GDAL via a GUI**
+# **Overview of GDAL Within a GUI**
 
 This is a companion site to a VCGI webinar scheduled for December 16, 2014 titled "Afraid of GDAL, There's a GUI For That: Raster Mastering in QGIS." The primary goal of this presentation is to demonstrate a GUI-based means of accessing the powerful tools available in the GDAL library. If you weren't scarred by command line DOS or PC ArcINFO you might be more inclined to access these tools (or at least ones you might use regularly) via command line given that processing time is often [reduced.](http://gis.amherstma.gov/data/springnearc2013/Session3/MapServices/NEARC_ASimmons_5_14_13.pdf) So if you wanted to convert between raster formats, you could simply fire up a command line terminal and enter:
 
