@@ -23,31 +23,31 @@ don't worry - that's the point of the webinar and this brief tutorial.
 ****
 ## **TOP TEN GDAL TOOLS (no particular order)**
   
-#### **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
+##### **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
 Useful for identifying projection within command line but less useful within a GUI-based GIS because you can typically view layer properties to find the same information. However in earlier versions of QGIS this was a useful tool when working with unfamiliar data sources.
 
-#### **2. Warp Raster** ([gdalwarp](http://gdal.org/1.11/gdalwarp.html))
+##### **2. Warp Raster** ([gdalwarp](http://gdal.org/1.11/gdalwarp.html))
 Similar to the Project Raster tool in the ESRI ArcGIS suite, this tool primarily allows users to assign raster layers different spatial reference system (SRS). However there are numerous options described in the documentation. One useful option is the `-r resampling_method` when up sampling or downsampling data. But this utility allows the user to also pass many other optional variables such as output format and nodata masking values (i.e. `-of format` and `-srcnodata`).
 
-#### **3. Assign Projection** (`-a_srs`)
+##### **3. Assign Projection** (`-a_srs`)
 Similar to the Define Projection tool in the ESRI ArcGIS suite, this is another optional parameter that allows gdalwarp and gdal_translate to assign or change the layer SRS. Similar to the [Define Projection](https://www.flickr.com/photos/43782063@N07/14869020514/sizes/o/) tool it is important to make sure this tool isn't used in lieu of `gdalwarp`, meaning it is important to avoid assigning an SRS rather than re-projecting the data (i.e. - just 'telling' the data it is in an SRS that it is not...).
 
-#### **4. Translate** ([gdal_translate](http://gdal.org/1.11/gdal_translate.html))
+##### **4. Translate** ([gdal_translate](http://gdal.org/1.11/gdal_translate.html))
 This is the Leatherman (I mean not all Swiss Army knives are actually multitools right?) of the GDAL library. This tool allows us to change the raster output format (i.e. - JPG, GeoTiff, etc), create a subset of the layer (i.e. - crop <-- seriously, crop not clip...), change the output size (outsize), extract and mask individual bands (`-b band`, `mask band`), and variety of other options described in the documentation.
 
-#### **5. DEM Tools** ([gdal_dem](http://www.gdal.org/gdaldem.html))
+##### **5. DEM Tools** ([gdal_dem](http://www.gdal.org/gdaldem.html))
 This utility provides many of the most commonly used functions available through ESRI's Spatial Analyst extension for creating derivative layers from digital elevation models (i.e. - hillshade, slope, aspect, ruggedness index, etc). An additional useful option is the color-relief syntax, which allows the user to pass a color rule set specifying which colors should be assigned to different elevation ranges. Just to reiterate the point about the processing time between command line via a GUI, this function can be accessed using the following syntax: 
 
 `gdaldem color-relief input_grid.tif color-rules.txt output-color-relief.tif`).
  
-#### **6. Polygonize** ([gdal_polygonize.py](http://www.gdal.org/gdal_polygonize.html))
+##### **6. Polygonize** ([gdal_polygonize.py](http://www.gdal.org/gdal_polygonize.html))
 Although the majority of the tools in the GDAl library were developed for raster analysis/processing it is often useful to convert raster layers to polygon features for cartographic representation. This utility is similar to the Raster to Polygon tool available in the ESRI ArcMap suite.
 
-#### **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
+##### **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
 It is often 
 
-#### **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
+##### **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
 
-#### **9. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
+##### **9. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
 
-#### **10. Build Pyramids** ([gdaladdo](http://www.gdal.org/gdaladdo.html))
+##### **10. Build Pyramids** ([gdaladdo](http://www.gdal.org/gdaladdo.html))
