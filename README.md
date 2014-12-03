@@ -44,7 +44,7 @@ This utility provides many of the most commonly used functions available through
 Although the majority of the tools in the GDAl library were developed for raster analysis/processing it is often useful to convert raster layers to polygon features for cartographic representation. This utility is similar to the Raster to Polygon tool available in the ESRI ArcMap suite.
 
 ##### **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
-It is often 
+It is often... updating soon.
 
 ##### **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
 
