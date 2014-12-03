@@ -18,7 +18,7 @@ don't worry - that's the point of the webinar and this brief tutorial.
 3. And lastly visit [LibreMap](http://libremap.org/data/state/vermont/) and search for Mansfield to get a DRG. This is a wonderful source for DRGs throughout the U.S.
 4. You could also [download](http://www.anr.state.vt.us/dec/geo/StateBedrockMap2012.htm) the bedrock geologic map of Vermont. For no particular reason other than it's gorgeous (and really informative I might add). Enjoy it.
 
-![](https://farm8.staticflickr.com/7465/15753420938_434dbae1c5_b.jpg)
+![](https://raw.githubusercontent.com/vanhoesenj/GDAL-VCGI/master/Images/geology.png)
 
 ****
 ## **TOP TEN GDAL TOOLS (no particular order)**
