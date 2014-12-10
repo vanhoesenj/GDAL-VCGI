@@ -21,7 +21,7 @@ don't worry - that's the point of today's webinar and this brief tutorial about 
 ![](https://raw.githubusercontent.com/vanhoesenj/GDAL-VCGI/master/Images/geology.png)
 
 ****
-## **USEFUL GDAL TOOLS (no particular order)**
+## **USEFUL GDAL TOOLS (in no particular order)**
   
 ##### **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
 Useful for identifying projection within command line but less useful within a GUI-based GIS because you can typically view layer properties to find the same information. However in earlier versions of QGIS this was a useful tool when working with unfamiliar data sources.
