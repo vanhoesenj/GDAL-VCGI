@@ -8,7 +8,7 @@ However if your response to that syntax is:
 
 ![](http://media.giphy.com/media/IJjcaynRaNBWE/giphy.gif)
 
-don't worry - that's the point of the webinar and this brief tutorial.
+don't worry - that's the point of today's webinar and this brief tutorial about accessing the power of GDAL through a GUI. However I will reiterate that becoming familiar with the syntax (even if that means just copy and pasting from a saved link) may be more efficient for some tasks.
 
 ***
 # **Ok, we need to procure some data!**
@@ -21,7 +21,7 @@ don't worry - that's the point of the webinar and this brief tutorial.
 ![](https://raw.githubusercontent.com/vanhoesenj/GDAL-VCGI/master/Images/geology.png)
 
 ****
-## **TOP TEN GDAL TOOLS (no particular order)**
+## **USEFUL GDAL TOOLS (no particular order)**
   
 ##### **1. Extract Projection** ([gdalsrsinfo](http://gdal.org/1.11/gdalsrsinfo.html))
 Useful for identifying projection within command line but less useful within a GUI-based GIS because you can typically view layer properties to find the same information. However in earlier versions of QGIS this was a useful tool when working with unfamiliar data sources.
