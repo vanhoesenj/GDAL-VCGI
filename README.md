@@ -8,12 +8,12 @@ However if your response to that syntax is:
 
 ![](http://media.giphy.com/media/IJjcaynRaNBWE/giphy.gif)
 
-don't worry - that's the point of today's webinar and this brief tutorial about accessing the power of GDAL through a GUI. However I will reiterate that becoming familiar with the syntax (even if that means just copy and pasting from a saved link) may be more efficient for some tasks.
+Don't worry - that's the point of today's webinar and this brief tutorial about accessing the power of GDAL through a QGIS (although it also accessible via [MapWindow](http://www.mapwindow.org/) and [gvSIG](http://www.gvsig.org/web)). However I will reiterate that becoming familiar with the syntax (even if that means just copy and pasting from a saved link) may be more efficient for some tasks.
 
 ***
 # **Ok, we need to procure some data!**
 
-1. Start by visiting the [Shangri-La](http://vcgi.vermont.gov/opendata) of data clearinghouses to obtain a 30-meter DEM of Vermont (yes, yes I know there is a 10-meter version and LiDAR is available but time is precious and some people are using Comcast...). Enter 30 in the search dialog and download the *ElevationDEM_DEM24* layer.
+1. Start by visiting the [Shangri-La](http://vcgi.vermont.gov/opendata) of GIS clearinghouses to obtain a 30-meter DEM of Vermont (yes, yes I know there is a 10-meter version and LiDAR is available but time is precious and some people are using Comcast...). Enter 30 in the search dialog and download the *ElevationDEM_DEM24* layer.
 2. We also need to download a vector layer from VCGI to demonstrate the full power of the GDAL library. You will also want to search for towns and download the *BoundaryTown_TWNBNDS* layer.
 3. And lastly visit [LibreMap](http://libremap.org/data/state/vermont/) and search for Mansfield to get a DRG. This is a wonderful source for DRGs throughout the U.S.
 4. You could also [download](http://www.anr.state.vt.us/dec/geo/StateBedrockMap2012.htm) the bedrock geologic map of Vermont. For no particular reason other than it's gorgeous (and really informative I might add). Enjoy it.
@@ -41,13 +41,14 @@ This utility provides many of the most commonly used functions available through
 `gdaldem color-relief input_grid.tif color-rules.txt output-color-relief.tif`).
  
 ##### **6. Polygonize** ([gdal_polygonize.py](http://www.gdal.org/gdal_polygonize.html))
-Although the majority of the tools in the GDAl library were developed for raster analysis/processing it is often useful to convert raster layers to polygon features for cartographic representation. This utility is similar to the Raster to Polygon tool available in the ESRI ArcMap suite.
+Although the majority of the tools in the GDAl library were developed for raster analysis/processing it is often useful to convert raster layers to polygon features for cartographic representation. This utility is similar to the *Raster to Polygon* tool available in the ESRI ArcMap suite.
 
 ##### **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
-It is often... updating soon.
+This utility interpolates continuous raster layers from point data using IDW, Nearest and Average algorithms - each of which have their own parameters that can be defined. It is similar to the interpolation tools available in the ArcMap suite. Perhaps the most exciting aspect of this tool is it offers the ability to parallelize processing to expedite your analyses.
 
 ##### **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
-
+This utility can be used to merge or mosaic multiple raster grids into a single file. This is especially useful for working with [ASTER](http://asterweb.jpl.nasa.gov/gdem.asp) or National Elevation Data ([NED](http://ned.usgs.gov/)) files. This is similar to the *Mosaic to New Raster* tool available in the ESRI ArcMap suite.
 ##### **9. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
-
+Once you have a single elevation layer - either after using `gdal_merge` or downloading an individual file - you can use this tool to create vector contours. This utility is similar to the *Contour* tool in the ESRI ArcMap suite.  
 ##### **10. Build Pyramids** ([gdaladdo](http://www.gdal.org/gdaladdo.html))
+If you create or are working with larger raster files,  you may want to create tiles of your data at varying zoom levels. This utility retiles a given raster file into multiple images for faster viewing and redraw time. This is similar to the *BuildPyramids* tool in the ESRI ArcMap suite.
