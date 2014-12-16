@@ -53,14 +53,14 @@ This utility provides many of the most commonly used functions available through
 
 ![](https://raw.githubusercontent.com/vanhoesenj/GDAL-VCGI/master/Images/gdal_grid_slope.png) 
 
-##### **6. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
-This utility interpolates continuous raster layers from point data using IDW, Nearest and Average algorithms - each of which have their own parameters that can be defined. It is similar to the interpolation tools available in the ArcMap suite. Perhaps the most exciting aspect of this tool is it offers the ability to parallelize processing to expedite your analyses.
-
-##### **7. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
-This utility can be used to merge or mosaic multiple raster grids into a single file. This is especially useful for working with [ASTER](http://asterweb.jpl.nasa.gov/gdem.asp) or National Elevation Data ([NED](http://ned.usgs.gov/)) files. This is similar to the *Mosaic to New Raster* tool available in the ESRI ArcMap suite.
-
-##### **8. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
+##### **6. Contour** ([gdal_contour](http://www.gdal.org/gdal_contour.html))
 Once you have a single elevation layer - either after using `gdal_merge` or downloading an individual file - you can use this tool to create vector contours. This utility is similar to the *Contour* tool in the ESRI ArcMap suite.
+
+##### **7. Grid** ([gdal_grid](http://www.gdal.org/gdal_grid.html))
+This utility interpolates continuous raster layers from point data using IDW, Nearest and Average algorithms - each of which have their own parameters that can be defined. It is similar to the interpolation tools available in the ArcMap suite. Perhaps the most exciting aspect of this tool is it offers the ability to parallelize processing to expedite your analyses. However I will say I typically use the interpolation tools accessible via GRASS or SAGA through the Processing Toolbox.
+
+##### **8. Merge** ([gdal_merge.py](http://www.gdal.org/gdal_merge.html))
+This utility can be used to merge or mosaic multiple raster grids into a single file. This is especially useful for working with [ASTER](http://asterweb.jpl.nasa.gov/gdem.asp) or National Elevation Data ([NED](http://ned.usgs.gov/)) files. This is similar to the *Mosaic to New Raster* tool available in the ESRI ArcMap suite.
   
 ##### **9. Build Pyramids** ([gdaladdo](http://www.gdal.org/gdaladdo.html))
 If you create or are working with larger raster files,  you may want to create tiles of your data at varying zoom levels. This utility retiles a given raster file into multiple images for faster viewing and redraw time. This is similar to the *BuildPyramids* tool in the ESRI ArcMap suite.
