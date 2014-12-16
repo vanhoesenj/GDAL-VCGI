@@ -22,6 +22,7 @@ Don't worry - that's the point of today's webinar and this brief tutorial about 
 
 ****
 ## **USEFUL GDAL TOOLS (in no particular order)**
+**Note**: not all of these utilities have screenshots or command line examples.
   
 ##### **1. Translate** ([gdal_translate](http://gdal.org/1.11/gdal_translate.html))
 This is the Leatherman (I mean not all Swiss Army knives are actually multitools right?) of the GDAL library. This tool allows us to change the raster output format (i.e. - JPG, GeoTiff, etc), create a subset of the layer (i.e. - crop <-- seriously, crop not clip...), change the output size (outsize), extract and mask individual bands (`-b band`, `mask band`), and variety of other options described in the documentation.
