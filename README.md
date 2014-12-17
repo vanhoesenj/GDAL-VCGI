@@ -10,6 +10,8 @@ However if your response to that syntax is:
 
 Don't worry - that's the point of today's webinar and this brief tutorial about accessing the power of GDAL through a QGIS (although it also accessible via [MapWindow](http://www.mapwindow.org/) and [gvSIG](http://www.gvsig.org/web)). For those of you solely using ESRI products, there is also a GDAL [plugin](https://github.com/RBURHUM/arcgis-ogr/) that provides access to many of these tools. However I will reiterate that becoming familiar with the syntax (even if that means just copy and pasting from a saved link) may be more efficient for some tasks.
 
+I frequently refer back to [this](https://github.com/dwtkns/gdal-cheat-sheet) cheatsheet from Derek Watkins.
+
 ***
 # **Ok, we need to procure some data!**
 
